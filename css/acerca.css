@@ -1,0 +1,37 @@
+.sectionacerca {
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .acerca-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para la animación de texto */
+  .animated-text p {
+    opacity: 0;
+    animation: fadeInUp 5s ease-in-out forwards;
+    font-size: 25px;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos para el texto de colores */
+  .rainbow-text {
+    background: linear-gradient(to right, #F56FA3, #F97F85, #F4AFA0);
+    -webkit-background-clip: text; /*Para aplicar al texto*/
+    color: transparent;
+    display: inline-block;
+    text-align: justify;
+  }

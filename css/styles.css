@@ -23,10 +23,13 @@ img {
     padding: 20px; /* Ajusta el espacio en el lado derecho */
 }
 
+.navbar-nav {
+    max-width: 100%; /* Ajusta el ancho máximo de la lista */
+}
 
 .navbar ul {
     list-style: none;
-    padding: 6;
+    max-width: 100%
 }
 
 .navbar li {
@@ -39,22 +42,42 @@ img {
     color: white;
     font-weight: bold;
     font-size: 15px;
-    padding: 3px; /* Espacio interno en cada elemento de la lista */
+    padding: 3px; /*Espacio interno en cada elemento de la lista */
     border-radius: 5px; /* Bordes redondeados */
     text-align: center; /* Alinea el texto al centro */
     margin-left: auto; /* Mueve los elementos al lado derecho */
-    overflow: hidden;/*Animación máquina*/
-    white-space: nowrap;/*Animación máquina*/
-    border-right: 4px solid transparent;/*Animación máquina*/
-    width: auto;
-    animation: typing 2s steps(11, end), blink-caret 0.5s step-end infinite;/*Animación máquina*/
+    /*Animación*/
+    position: relative; /* Añade posición relativa para posicionar el pseudo-elemento */
+    overflow: hidden; /* Oculta el exceso de letras */
+}
+
+/* Animación para aparecer las letras una por una */
+.navbar a span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1em);
+    animation: appearText 2s forwards ease-in-out;
+}
+
+/* Definición de la animación */
+@keyframes appearText {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect */
+.navbar a:hover span {
+    animation: none; /* Detiene la animación en hover */
 }
 
 .navbar-brand {
     margin: 50px;
 }
 
-/* Ajustes para los elementos del navbar */
+/* Ajustes para los elementos del navbar dispositivos mayores a 768px */
+@media (min-width: 768px) {
 .navbar li:first-child {
     margin-bottom: 100; /* Espacio extra para el primer elemento */
 }
@@ -73,25 +96,11 @@ img {
 }
 .navbar li:nth-child(5) {
     margin-right: 100px; /* Ajusta el margen derecho del quinto elemento */
-}
+}}
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.navbar .navbar-brand {
-    animation: spin 2s linear infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #ffffff; }
+.mi-clase-personalizada {
+    background:linear-gradient(to right, #F56FA3, #F4AFA0);
+    color: #F56FA3;
 }
 
 .main {
@@ -143,14 +152,32 @@ h1 {
 .presentacion-image-container {
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     max-width: 400px; /* Ajusta el ancho máximo de la imagen */
-    margin: 50px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .presentacion-image {
-    background-size: cover;
-    border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Ajusta según tu preferencia */
+    animation: fadeAndMove 5s infinite alternate, scaleWithShadow 5s infinite alternate; /* Animación para el efecto de neón */
+} 
+
+@keyframes fadeAndMove {
+    0%, 100% { opacity: 1; transform: translate(-10px, -10px); }
+    50% { opacity: 0; transform: translate(10px, 10px); }
 }
 
+.presentacion-image:hover {
+    animation: fadeAndMove 1s infinite;
+}
+
+@keyframes scaleWithShadow {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    50% { transform: scale(1.2); box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }
+}
 
 footer {
     display: flex;
@@ -177,4 +204,11 @@ footer {
     
 }
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
+.navbar .navbar-brand {
+    animation: spin 2s linear infinite;
+}
