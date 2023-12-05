@@ -1,0 +1,27 @@
+.sectioncontacto {
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+form {
+    padding: 10px;
+    background: rgba(255, 143, 179, 0.85);
+    max-width: 600px; /* Ajusta el ancho máximo del formulario según tu diseño */
+    margin: auto;
+    border-radius:30px;
+}
+
+.btn {
+    background:linear-gradient(to right, #F56FA3, #F4AFA0);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover {
+    background: linear-gradient(to right, #F4AFA0, #F56FA3);
+}

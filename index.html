@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/img/logo-group.png" type="image/x-icon">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/acerca.css">
+    <link rel="stylesheet" href="./css/habilidades.css">
+    <link rel="stylesheet" href="./css/proyectos.css">
+    <link rel="stylesheet" href="./css/contacto.css">
  </head>
   <body>
     
@@ -74,8 +78,8 @@
 <span class="container-secciones">
     <!-- Sección "Acerca de" -->
     <section id="acerca" class="sectionacerca">
+      <h2>Acerca de</h2>
       <div class="acerca-container">
-        <h2>Acerca de</h2>
         <div class="animated-text">
           <p class="rainbow-text">
             Ingeniera mecánica eléctricista que ha emprendido una emocionante transición de carrera hacia el mundo del desarrollo Java FullStack. Mi profundo compromiso con la tecnología y la innovación me ha llevado a explorar este nuevo camino con pasión y determinación. Mi formación en ingeniería me ha proporcionado una sólida base analítica y resolutiva, que ahora aplico en el diseño de experiencias web atractivas y funcionales. Mi objetivo es combinar la creatividad y la precisión técnica para crear soluciones digitales impactantes.
@@ -85,21 +89,99 @@
     </section>
 
     <!-- Sección "Habilidades" -->
-    <section id="habilidades" class="section">
+    <section id="habilidades" class="sectionhabilidades">
+      <div class="habilidades-container">
       <h2>Habilidades</h2>
-      <!-- Contenido de la sección Habilidades -->
+      <p>Tecnologías</p>
+      <div class="imagenes">
+        <img src="./assets/img/tecnologias/python.png" alt="python">
+        <img src="./assets/img/tecnologias/html5.png" alt="html5">
+        <img src="./assets/img/tecnologias/css3.png" alt="ccs3">
+        <img src="./assets/img/tecnologias/javascript.png" alt="javascript">
+        <img src="./assets/img/tecnologias/sql.png" alt="sql">
+      </div>
+      <p>Herramientas</p>
+      <div class="imagenes">
+        <img src="./assets/img/herramientas/bootstrap.png" alt="bootstrap">
+        <img src="./assets/img/herramientas/figma1.png" alt="figma1">
+        <img src="./assets/img/herramientas/git.png" alt="git">
+        <img src="./assets/img/herramientas/Group.png" alt="server">
+        <img src="./assets/img/herramientas/monday.png" alt="monday">
+        <img src="./assets/img/herramientas/mysql.png" alt="mysql">
+        <img src="./assets/img/herramientas/trello.png" alt="trello">
+        <img src="./assets/img/herramientas/visualcode.png" alt="visualcode">
+      </div>
+      </div>
     </section>
 
     <!-- Sección "Proyectos" -->
-    <section id="proyectos" class="section">
+    <section id="proyectos" class="sectionproyectos">
       <h2>Proyectos</h2>
-      <!-- Contenido de la sección Proyectos -->
+     <div class="proyectos-container">
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/elpreciojusto.PNG" class="d-block w-100" alt="El Precio Justo">
+            <div class="overlay">
+              <h3>Ecommerce "El Precio Justo"</h3>
+              <a href="https://ch33-team-6.github.io/Proyecto-Ferreteria/" class="btn" target="_blank">Ver más</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+     </div>
+      
     </section>
 
     <!-- Sección "Contacto" -->
-    <section id="contacto" class="section">
+    <section id="contacto" class="sectioncontacto">
       <h2>Contacto</h2>
-      <!-- Contenido de la sección Contacto -->
+      
+      <form action="">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"></label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label"></label>
+          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput3" class="form-label"></label>
+          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Correo Electrónico">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput4" class="form-label"></label>
+          <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="Teléfono">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
     </section>
   </span>
     </main>

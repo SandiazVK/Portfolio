@@ -1,0 +1,52 @@
+.sectionhabilidades {
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    transition: .5s;
+    overflow: hidden;
+    color: #FFFFFF;
+    margin:0px 0px 50px 0px;
+}
+
+h2:hover {
+    background-color: #F56FA3;
+    color: #050801;
+    box-shadow: 0 0 5px #F56FA3,
+                0 0 25px #F56FA3,
+                0 0 50px #F56FA3,
+                0 0 200px #F56FA3;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+p {
+    font-size: 25px;
+}
+
+ .habilidades-container {
+    width: 100%;
+ }
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .imagenes img {
+    width: calc(33.33% - 20px); /* Calcula el ancho para tres imágenes en la primera línea (considerando los márgenes) */
+    max-width: 150px;
+    height: auto;
+    margin: 0 10px 10px 0; /* Margen en la parte inferior para separar las imágenes */
+    transition: transform 0.3s ease-in-out;
+}
+
+  
+  .imagenes:hover img {
+    transform: rotate(360deg);
+  }
