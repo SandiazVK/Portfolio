@@ -2,14 +2,49 @@
     color: white;
     text-align: center;
     padding: 50px;
+    background: url(../assets/img/20231206_003321.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 form {
     padding: 10px;
-    background: rgba(255, 143, 179, 0.85);
+   /* background: rgba(255, 143, 179, 0.85);*/
     max-width: 600px; /* Ajusta el ancho máximo del formulario según tu diseño */
     margin: auto;
-    border-radius:30px;
+    /*border-radius:30px;*/
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.491);
+}
+
+.form-control2 {
+    width: 100%;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #F56FA3;
+    color: #F56FA3;
+}
+
+.form-control1 {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #F56FA3;
+    color: #F56FA3;
+}
+
+.form-control1::placeholder {
+    font-size: 1.2rem;
+}
+
+.form-control2::placeholder {
+    font-size: 1.2rem;
 }
 
 .btn {

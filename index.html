@@ -133,12 +133,12 @@
               <a href="https://ch33-team-6.github.io/Proyecto-Ferreteria/" class="btn" target="_blank">Ver más</a>
             </div>
           </div>
-          <div class="carousel-item">
+          <!--<div class="carousel-item">
             <img src="..." class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="..." class="d-block w-100" alt="...">
-          </div>
+          </div>-->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -159,27 +159,40 @@
       <h2>Contacto</h2>
       
       <form action="">
+
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"></label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+          <label for="name" class="form-label"></label>
+          <input type="text" class="form-control2" id="name" placeholder="Nombre" autocomplete="on">
+          <!--<div id="invalid-name"></div>-->
         </div>
+
         <div class="mb-3">
-          <label for="exampleFormControlInput2" class="form-label"></label>
-          <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
+          <label for="lastname" class="form-label"></label>
+          <input type="text" class="form-control2" id="lastname" placeholder="Apellido" autocomplete="on">
+          <div id="invalid-lastname"></div>
         </div>
+
         <div class="mb-3">
-          <label for="exampleFormControlInput3" class="form-label"></label>
-          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Correo Electrónico">
+          <label for="email" class="form-label"></label>
+          <input type="email" class="form-control2" id="email" placeholder="Correo Electrónico" autocomplete="on">
+          <div id="invalid-email"></div>
         </div>
+
         <div class="mb-3">
-          <label for="exampleFormControlInput4" class="form-label"></label>
-          <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="Teléfono">
+          <label for="number" class="form-label"></label>
+          <input type="text" class="form-control2" id="number" placeholder="Teléfono" maxlength="10" required>
+          <div id="invalid-number"></div>
         </div>
+
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="3"></textarea>
+          <label for="Mensaje" class="form-label"></label>
+          <textarea class="form-control1" id="Mensaje" placeholder="Mensaje" rows="3" value="" required></textarea>
+          <div id="invalid-text"></div>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+        <button type="submit" id="btn" class="btn btn-primary">Enviar</button>
+
       </form>
 
     </section>

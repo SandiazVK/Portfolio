@@ -2,29 +2,18 @@
     color: white;
     text-align: center;
     padding: 50px;
+    background: url(../assets/img/20231206_003322.jpg);
+    background-attachment: fixed;
+    background-size: cover;
   }
   
   .acerca-container {
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  /* Estilos para la animación de texto */
-  .animated-text p {
-    opacity: 0;
-    animation: fadeInUp 5s ease-in-out forwards;
-    font-size: 25px;
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    box-sizing: border-box;
+    border-bottom: 2px solid #F56FA3;
+    background: rgba(0, 0, 0, 0.491);
+    padding: 10px;
   }
   
   /* Estilos para el texto de colores */
